@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ESPullToRefresh (2.9.3)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.1)
+  - ESPullToRefresh
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ESPullToRefresh
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ESPullToRefresh: 0d68daa602b343c81753a1b95e09fd0bfcddfd40
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 9e756e0cc94926a71a6fe4601601ef0256548b16
+
+COCOAPODS: 1.9.3

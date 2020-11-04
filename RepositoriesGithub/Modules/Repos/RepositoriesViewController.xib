@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepositoriesViewController" customModule="RepositoriesGithub" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="ZjF-Ia-X6p" id="Jzf-DP-kzE"/>
+                <outlet property="tableView" destination="4aS-It-nwn" id="DHB-YP-8gY"/>
+                <outlet property="totalCount" destination="wsS-DD-6oN" id="XHt-yl-S56"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" showsSearchResultsButton="YES" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZjF-Ia-X6p">
+                    <rect key="frame" x="0.0" y="77" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="VLx-NM-EB1"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4aS-It-nwn">
+                    <rect key="frame" x="0.0" y="121" width="414" height="741"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsS-DD-6oN">
+                    <rect key="frame" x="8" y="52" width="74.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZjF-Ia-X6p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" symbolic="YES" id="Ico-HK-YoO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZjF-Ia-X6p" secondAttribute="trailing" id="Tfz-HI-Zpi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4aS-It-nwn" secondAttribute="bottom" id="Txt-qI-pRE"/>
+                <constraint firstItem="wsS-DD-6oN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Vqq-24-XNd"/>
+                <constraint firstItem="4aS-It-nwn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fGk-YV-LJq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4aS-It-nwn" secondAttribute="trailing" id="jaG-4x-UWL"/>
+                <constraint firstItem="4aS-It-nwn" firstAttribute="top" secondItem="ZjF-Ia-X6p" secondAttribute="bottom" symbolic="YES" id="lHM-Ey-R5p"/>
+                <constraint firstItem="wsS-DD-6oN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="p7H-Vl-oBK"/>
+                <constraint firstItem="ZjF-Ia-X6p" firstAttribute="top" secondItem="wsS-DD-6oN" secondAttribute="bottom" constant="8" id="tQ6-Q7-mgl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="133" y="153"/>
+        </view>
+    </objects>
+</document>
